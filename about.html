@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Spice Haven</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            background-color: #9ea777 !important;
+            color: #121212 !important;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar-about {
+            background-color: #ffffff !important;
+            border-bottom: 1px solid #dcdcdc !important;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-about .nav-brand a {
+            color: #121212 !important;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .navbar-about .nav-menu a {
+            color: #121212 !important;
+            font-weight: 500;
+        }
+
+        
+        .about-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 25px 100px;
+        }
+
+        .about-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.5rem, 8vw, 5rem);
+            font-weight: 700;
+            color: #121212;
+            letter-spacing: 2px;
+            margin: 0 0 25px 0;
+            line-height: 1;
+        }
+
+         
+        .about-logo-icon {
+            width: 70px;
+            height: auto;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        
+        .about-paragraph {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #1a1a1a;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                padding: 40px 20px 80px;
+            }
+            .about-paragraph {
+                font-size: 1.05rem;
+                line-height: 1.75;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-about">
+        <div class="nav-brand"><a href="index.html">SPICE HAVEN</a></div>
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="about.html" class="active" style="font-weight: bold;">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="book-a-table.html">BOOK A TABLE</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+            <span style="background-color:#121212;"></span>
+            <span style="background-color:#121212;"></span>
+            <span style="background-color:#121212;"></span>
+        </button>
+    </nav>
+
+    
+    <main class="about-container">
+        <h1 class="about-title">ABOUT</h1>
+
+        
+        <svg class="about-logo-icon" viewBox="0 0 100 80" fill="#121212">
+            
+            <path d="M 10,40 C 10,15 35,15 45,40 C 35,45 10,45 10,40 Z" />
+        
+            <path d="M 50,5 C 30,25 30,45 50,45 C 70,45 70,25 50,5 Z" />
+            
+            <path d="M 90,40 C 90,15 65,15 55,40 C 65,45 90,45 90,40 Z" />
+            
+            <rect x="20" y="52" width="16" height="16" rx="2" />
+            <rect x="42" y="52" width="16" height="16" rx="2" />
+            <rect x="64" y="52" width="16" height="16" rx="2" />
+        </svg>
+
+        <p class="about-paragraph">
+            Spice Haven was born in 2010 from a simple belief — that great Indian food should be accessible, authentic, and deeply nourishing[cite: 6]. Founded by Chef Arjun Mehta and his family, our kitchen draws on recipes passed down through three generations, refined with the finest local produce and spices sourced directly from India[cite: 6].
+        </p>
+
+        <p class="about-paragraph">
+            Every dish on our menu tells a story — of regions, rituals, and the remarkable diversity of Indian cuisine[cite: 6]. From the slow-braised kormas of the north to the coastal seafood curries of Kerala, we bring the full spectrum of flavour to your table[cite: 6].
+        </p>
+
+        <p class="about-paragraph">
+            We are proud to have served over 50,000 guests in the heart of San Francisco, earning a 4.9-star rating and recognition as one of the Bay Area's top Indian restaurants three years running[cite: 6]. Our doors are always open — come discover your new favourite dish[cite: 6].
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #8c9567; color: #121212; border-top: 1px solid #7c8557;">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <p class="sub-title" style="color: #2b2b2b;">INDIAN RESTAURANT<br>&amp; CAFFE</p>
+                <b class="brand-title" style="color: #121212;">SPICE HAVEN</b>
+            </div>
+            <div class="footer-col info" style="color: #2b2b2b;">
+                A: 500 Terry Francine St.<br>
+                San Francisco CA 94158<br>
+                T: 123-456-7890<br>
+                E: hello@spicehaven.com<br><br>
+                Mon–Sun: 12:00 PM – 10:30 PM
+            </div>
+            <div class="footer-col links">
+                <a href="index.html" style="color:#121212;">HOME</a>
+                <a href="menu.html" style="color:#121212;">MENU</a>
+                <a href="about.html" style="color:#121212;">ABOUT</a>
+                <a href="contact.html" style="color:#121212;">CONTACT</a>
+                <a href="book-a-table.html" style="color:#121212;">BOOK A TABLE</a>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid #7c8557; color: #333333;">
+            <p>© 2025 by Spice Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

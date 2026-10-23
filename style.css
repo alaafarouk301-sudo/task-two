@@ -1,0 +1,437 @@
+
+:root {
+    --bg-dark: #101010;
+    --text-white: #ffffff;
+    --text-gold: #c2a373;
+    --text-gray: #a0a0a0;
+    --border-dark: #222222;
+    --font-playfair: 'Playfair Display', serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: var(--font-jakarta);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: rgba(16, 16, 16, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.nav-brand {
+    font-family: var(--font-playfair);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--text-gold);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-white);
+}
+
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    
+    background: linear-gradient(rgba(16, 16, 16, 0.55), rgba(16, 16, 16, 0.75)), 
+                url('https://preview.themewagon.com/spicehaven/images/gallery-3.webp') no-repeat center center/cover;
+}
+
+.hero-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: var(--text-gold);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-family: var(--font-playfair);
+    font-size: clamp(3.2rem, 6vw, 5.5rem);
+    line-height: 1.1;
+    font-weight: 400;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hero-title em {
+    font-style: italic;
+    color: var(--text-gold);
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--text-gray);
+}
+
+.scroll-line {
+    width: 1px;
+    height: 40px;
+    background-color: var(--text-gold);
+}
+
+
+.menu-intro {
+    padding: 120px 8%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.menu-intro-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: var(--text-gold);
+    font-family: var(--font-playfair);
+}
+
+.menu-intro-content p {
+    font-size: 1.1rem;
+    color: #c0c0c0;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.btn-explore {
+    display: inline-block;
+    padding: 14px 36px;
+    border: 1px solid var(--text-gold);
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.btn-explore:hover {
+    background: var(--text-gold);
+    color: var(--bg-dark);
+}
+
+
+.feature-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 4%;
+    max-width: 1500px;
+    margin: 0 auto 100px;
+}
+
+.feature-img-wrapper img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.philosophy-section {
+    padding: 100px 8%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.philosophy-title {
+    font-family: var(--font-playfair);
+    font-size: 3.2rem;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+.philosophy-content p {
+    font-size: 1.05rem;
+    color: #c0c0c0;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.btn-about {
+    display: inline-block;
+    padding: 14px 36px;
+    border: 1px solid var(--text-gold);
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.btn-about:hover {
+    background: var(--text-gold);
+    color: var(--bg-dark);
+}
+
+
+.testimonial-section {
+    background-color: #161616;
+    padding: 90px 10%;
+    text-align: center;
+    margin: 80px 0;
+    border-top: 1px solid var(--border-dark);
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.testimonial-box .quote {
+    font-family: var(--font-playfair);
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #e0e0e0;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.testimonial-box .author {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--text-gold);
+}
+
+/* Insta Banner */
+.insta-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.insta-sub {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--text-gold);
+    margin-bottom: 12px;
+}
+
+.insta-link {
+    font-family: var(--font-playfair);
+    font-size: 1.5rem;
+    color: var(--text-white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-gold);
+    padding-bottom: 4px;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    padding: 20px 4% 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 8px 16px;
+    backdrop-filter: blur(4px);
+}
+
+.gallery-item .overlay h4 {
+    font-size: 0.85rem;
+    color: var(--text-white);
+    font-weight: 400;
+}
+
+/* Footer */
+.footer {
+    background-color: #0b0b0b;
+    border-top: 1px solid var(--border-dark);
+    padding: 80px 8% 40px;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.footer-col .sub-title {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+}
+
+.footer-col .brand-title {
+    font-family: var(--font-playfair);
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.footer-col.info {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+.footer-col.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col.links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.footer-col.links a:hover {
+    color: var(--text-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid var(--border-dark);
+    padding-top: 30px;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-bottom a {
+    color: var(--text-gold);
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .menu-intro, .philosophy-section, .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .feature-banner {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-dark);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border-dark);
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

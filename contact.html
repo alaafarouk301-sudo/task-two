@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Spice Haven</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ededed !important;
+            color: #121212 !important;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 100px 30px 100px;   
+        }
+
+        .contact-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.5rem, 8vw, 5rem);
+            font-weight: 700;
+            color: #121212;
+            letter-spacing: 2px;
+            margin: 0 0 45px 0;
+            line-height: 1.1; 
+            text-transform: uppercase;
+        }
+
+        .contact-block {
+            margin-bottom: 35px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #121212;
+        }
+
+        .contact-link {
+            display: inline-block;
+            color: #121212;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #121212;
+            padding-bottom: 2px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+        }
+
+        .contact-email {
+            color: #555555;
+            font-size: 1.1rem;
+            margin-top: 35px;
+            margin-bottom: 40px;
+            display: block;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 80px 20px 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top White Navigation Bar -->
+    <nav class="navbar" style="background-color: #ffffff !important; border-bottom: 1px solid #dcdcdc !important;">
+        <div class="nav-brand"><a href="index.html" style="color: #121212 !important;">SPICE HAVEN</a></div>
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" style="color: #121212 !important;">HOME</a>
+            <a href="menu.html" style="color: #121212 !important;">MENU</a>
+            <a href="about.html" style="color: #121212 !important;">ABOUT</a>
+            <a href="contact.html" class="active" style="color: #121212 !important; font-weight: bold;">CONTACT</a>
+            <a href="book-a-table.html" style="color: #121212 !important;">BOOK A TABLE</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+            <span style="background-color:#121212;"></span>
+            <span style="background-color:#121212;"></span>
+            <span style="background-color:#121212;"></span>
+        </button>
+    </nav>
+
+    <!-- Main Contact Content -->
+    <main class="contact-container">
+        <h1 class="contact-title">CONTACT</h1>
+
+        <div class="contact-block">
+            500 Terry Francine St.<br>
+            San Francisco CA 94158
+        </div>
+
+        <div class="contact-block">
+            T: 123-456-7890
+        </div>
+
+        <div style="margin-top: 35px; margin-bottom: 35px;">
+            <div><a href="#!" class="contact-link">INSTAGRAM</a></div>
+            <div><a href="#!" class="contact-link">FACEBOOK</a></div>
+        </div>
+
+        <div class="contact-block" style="margin-top: 40px;">
+            MON – FRI: 12PM – 10:30PM<br>
+            SAT – SUN: 11AM – 11PM
+        </div>
+
+        <a href="mailto:hello@spicehaven.com" class="contact-email">hello@spicehaven.com</a>
+
+        <div>
+            <a href="book-a-table.html" class="contact-link" style="font-size: 1rem;">BOOK A TABLE</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #7f8285; color: #121212; border-top: 1px solid #6c6f72;">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <p class="sub-title" style="color: #2b2b2b;">INDIAN RESTAURANT<br>&amp; CAFFE</p>
+                <b class="brand-title" style="color: #121212;">SPICE HAVEN</b>
+            </div>
+            <div class="footer-col info" style="color: #2b2b2b;">
+                A: 500 Terry Francine St.<br>
+                San Francisco CA 94158<br>
+                T: 123-456-7890<br>
+                E: hello@spicehaven.com<br><br>
+                Mon–Sun: 12:00 PM – 10:30 PM
+            </div>
+            <div class="footer-col links">
+                <a href="index.html" style="color:#121212;">HOME</a>
+                <a href="menu.html" style="color:#121212;">MENU</a>
+                <a href="about.html" style="color:#121212;">ABOUT</a>
+                <a href="contact.html" style="color:#121212;">CONTACT</a>
+                <a href="book-a-table.html" style="color:#121212;">BOOK A TABLE</a>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid #6c6f72; color: #333333;">
+            <p>© 2025 by Spice Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
